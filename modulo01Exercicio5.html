@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title> Exercício 5 </title>
+    
+    </head>
+
+    <body>
+
+        <script>
+
+            var usuarios = [
+            {
+            nome: "Diego",
+            habilidades: ["Javascript", "ReactJS", "Redux"]
+            },
+            {
+            nome: "Gabriel",
+            habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+            }
+            ];
+
+            escreveFrase(usuarios);
+
+            function escreveFrase(usuarios = []) {
+
+                var frase;
+
+                 for ( let skill of usuarios) {
+
+                    console.log(skill);
+
+                    frase = "O " + skill.nome + " possui as habilidades: ";
+
+                    frase = frase + skill.habilidades.join([', ']);
+
+                       console.log(frase);
+                    }
+            }
+
+        </script>
+
+    </body>
+</html>

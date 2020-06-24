@@ -1,0 +1,61 @@
+<html>  
+
+    <head>
+        <meta charset="UTF-8">
+        <title> Exercício 4 </title>
+    </head>
+
+    <body>
+        <div id="botaoadd">
+            <input type="text" name="Nome">
+            <button onClick="adicionar()">Adicionar</button>
+        </div>
+        <div id="app">
+
+        </div>
+
+
+        <script>
+
+            var nomes = ["Diego", "Gabriel", "Lucas"];
+
+            listaNomes(nomes);
+
+            function adicionar() {
+
+                var nomeDigitado = document.getElementsByName("Nome")[0].value;
+
+                nomes.push(nomeDigitado);
+
+            listaNomes(nomes);
+
+            }
+
+            function listaNomes(nome = []) {
+
+                var lista = document.createElement('ul');
+
+                var containerElement = document.querySelector('#app');
+                
+                containerElement.appendChild(lista);
+
+                
+                for (var i=0;i<nome.length;i++) {
+
+                    var elementos = document.createElement('li');
+                    
+                    lista.appendChild(elementos);
+                    elementos.innerHTML = nome[i];
+
+                }
+                
+            }
+            
+
+
+
+        </script>
+
+    </body>
+
+</html>

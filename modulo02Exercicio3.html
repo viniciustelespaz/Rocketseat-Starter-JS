@@ -1,0 +1,40 @@
+<html>  
+
+    <head>
+        <meta charset="UTF-8">
+        <title> Exercício 3 </title>
+    </head>
+
+    <body>
+        <div id="app">
+
+        </div>
+
+
+        <script>
+            var nomes = ["Diego", "Gabriel", "Lucas"];
+
+            var lista = document.createElement('ul');
+
+            var containerElement = document.querySelector('#app');
+
+            containerElement.appendChild(lista);
+
+            for (var i=0;i<nomes.length;i++) {
+
+                console.log('entrou');
+
+                var elementos = document.createElement('li');
+                
+                lista.appendChild(elementos);
+                elementos.innerHTML = nomes[i];
+
+            }
+
+
+
+        </script>
+
+    </body>
+
+</html>

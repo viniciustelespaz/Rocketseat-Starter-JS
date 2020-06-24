@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title> Exercício 3 </title>
+    
+    </head>
+
+    <body>
+
+        <script>
+
+            var skills = ["Javascript", "ReactJS", "React Native"]; 
+
+            console.log(existeHabilidade(skills));
+
+            function existeHabilidade(skills = []) {
+
+                var posicao = -1;
+
+                posicao = skills.indexOf("Javascript",[]);
+
+                return posicao !==-1 ? true : false;
+                
+            }
+
+        </script>
+
+    </body>
+</html>

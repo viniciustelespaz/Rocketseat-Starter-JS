@@ -1,0 +1,39 @@
+<html>  
+
+    <head>
+        <meta charset="UTF-8">
+        <title> Exercício 1 </title>
+    </head>
+
+    <body>
+        <div id="app">
+            <button class="botao">Adicionar</button>
+            <div class="box"> </div>
+            
+        </div>
+
+        <script>
+            var boxElement = document.querySelector(".app");
+
+            var btnElement = document.querySelector(".botao");
+
+            btnElement.onclick = function criarQuadrado() {
+
+                console.log("clicou");    
+
+                var quadradoVermelho = document.createElement('div');
+                
+                quadradoVermelho.style.width = 100;
+                quadradoVermelho.style.height = 100;
+                quadradoVermelho.style.backgroundColor = '#f00';
+                quadradoVermelho.style.margin = 2;
+
+                var containerElement = document.querySelector('#app');
+                containerElement.appendChild(quadradoVermelho);
+
+            }
+
+        </script>
+    </body>
+
+</html>
